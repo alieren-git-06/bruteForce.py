@@ -21,7 +21,7 @@ def brute(username,password):
 def main():
 	words = [w.strip() for w in open("passwords.txt", "rb").readlines()] #parse wordlist
 	for payload in words:
-		brute(payload,"a")
+		brute("admin",payload)
 
 
 if __name__ == '__main__':
